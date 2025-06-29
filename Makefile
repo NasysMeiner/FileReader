@@ -4,7 +4,7 @@ F = out
 D = src
 Jar = ReadFile.jar
 
-Args := -s -o result -p out- in1.txt in2.txt
+args := -s -o result -p out- in1.txt in2.txt
 
 all: OUT Main.class Package Remove
 
@@ -21,7 +21,7 @@ Main.class: $(D)/Main.java $(D)/ReadFile.java | $(F)
 	$(C) -d $(F) $(D)/Main.java $(D)/ReadFile.java
 
 run:
-	$(R) -jar $(Jar) $(Args)
+	$(R) -jar $(Jar) $(args)
 
 clean:
 	rm -rf $(Jar)
