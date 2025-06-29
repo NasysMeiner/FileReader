@@ -26,7 +26,7 @@ public class ReadFile {
 	//[max],[min],[sum]
 	//  0     1     2
 	private int[] intArr = new int[] {Integer.MIN_VALUE, Integer.MAX_VALUE, 0};
-	private float[] floatArr = new float[] {Float.MIN_VALUE, Float.MAX_VALUE, 0};
+	private float[] floatArr = new float[] {-Float.MAX_VALUE, Float.MAX_VALUE, 0};
 	private int[] stringArr = new int[] {Integer.MIN_VALUE, Integer.MAX_VALUE};
 
 	private String[] nameFiles = new String[3];
