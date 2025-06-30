@@ -9,10 +9,12 @@
 </ol>
 <p>Команда 2 запускает программу с базовыми аргументами:</p>
 
-	<p>args="-s -o result -p out- in1.txt in2.txt"</p>
+	args="-s -o result -p out- in1.txt in2.txt"
  
 <p>Так же можно задать свои аргументы через поле args="параметры" после run</p>
-<p>Пример: make run args="-f -o new -p fast -a in3.txt"</p>
+<p>Пример:</p>
+
+	make run args="-f -o new -p fast -a in3.txt"
 
 </p>Ввод: вначале указываются флаги и аргументы к ним - после нужные файлы</p>
 
