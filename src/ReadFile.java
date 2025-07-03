@@ -179,7 +179,6 @@ public class ReadFile {
                 }
             }
 			catch (IOException e) {
-				//System.err.println("Failed to open file2:" + file);
 			}
 		}
 	}
@@ -217,7 +216,7 @@ public class ReadFile {
 			
 			if(stringArr[0] > 0) {
 				builder.append(prefix + stringNameFile);
-				count = CheckCountLine(path + prefix + floatNameFile);
+				count = CheckCountLine(path + prefix + stringNameFile);
 				builder.append(":\n	Size: " + count);
 
 				if(statistics == 2) {
@@ -257,7 +256,7 @@ public class ReadFile {
 				}
 			}
 			catch (IOException e) {
-				System.err.println("Error in prefix or path file1");
+				System.err.println("Error in prefix or path file: " + path + prefix + integerNameFile);
 			}
 		}
 
@@ -268,7 +267,7 @@ public class ReadFile {
 				}
 			}
 			catch (IOException e) {
-				System.err.println("Error in prefix or path file2");
+				System.err.println("Error in prefix or path file: " + path + prefix + floatNameFile);
 			}
 		}
 		
@@ -279,7 +278,7 @@ public class ReadFile {
 				}
 			}
 			catch(IOException e) {
-            	System.err.println("Error in prefix or path file3");
+            	System.err.println("Error in prefix or path file: " + path + prefix + stringNameFile);
 			}
 		}
     }
